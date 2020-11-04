@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be4e6f7d-4dcf-41fa-8db2-b5f724348a98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_29_164741_create_news_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/news/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/NewsTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -142,11 +144,35 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.NewsTest">
+    <configuration name="NewsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsTest.test_users_can_view_all_news" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" method="test_users_can_view_all_news" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.NewsTest" />
+        <item itemvalue="PHPUnit.NewsTest.test_users_can_view_all_news" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -156,7 +182,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603987693498</updated>
-      <workItem from="1603987695690" duration="847000" />
+      <workItem from="1603987695690" duration="1965000" />
+      <workItem from="1604073406833" duration="4135000" />
+      <workItem from="1604405345188" duration="346000" />
+      <workItem from="1604433044875" duration="337000" />
+      <workItem from="1604477059018" duration="2446000" />
     </task>
     <servers />
   </component>
@@ -164,21 +194,33 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1603988020956">
+    <state x="489" y="159" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604079268640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603988020956" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1603988020955">
+    <state x="489" y="159" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1604079268640" />
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604078893268">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603988020955" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1603988020954">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604078893268" />
+    <state width="1398" height="491" key="GridCell.Tab.0.bottom" timestamp="1604479506497">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603988020954" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1603988020955">
+    <state width="1398" height="491" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604479506497" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.793@0.23.1440.793" timestamp="1603992871424" />
+    <state width="1398" height="491" key="GridCell.Tab.0.center" timestamp="1604479506495">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603988020955" />
+    <state width="1398" height="491" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604479506495" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.793@0.23.1440.793" timestamp="1603992871422" />
+    <state width="1398" height="491" key="GridCell.Tab.0.left" timestamp="1604479506495">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="491" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604479506495" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.793@0.23.1440.793" timestamp="1603992871421" />
+    <state width="1398" height="491" key="GridCell.Tab.0.right" timestamp="1604479506496">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="491" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604479506496" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.793@0.23.1440.793" timestamp="1603992871423" />
   </component>
 </project>
