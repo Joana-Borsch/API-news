@@ -71,4 +71,21 @@ class NewsTest extends TestCase
         $response->assertStatus(302);
         $response->assertRedirect('/news');
     }
+    public function test_can_delete_news(){
+        $user = User::factory()->make();
+        $news = News::factory()->create([
+            'headline'=>'Yoga',
+            'newsbody'=>'descripcio',
+        ]);
+
+        $response = $this->actingAs($user)->delete('/news/' .$news->id);
+        $this->assertDatabaseMissing('news', [
+            'headline'=>'Yoga',
+            'newsbody'=>'descripcio',
+        ]);
+
+        $response->assertStatus(302);
+        $response->assertRedirect('/news');
+
+    }
 }

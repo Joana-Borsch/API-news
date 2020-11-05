@@ -47,6 +47,7 @@ class NewsController extends Controller
 
     public function destroy(News $news)
     {
-        //
+        $news->delete();
+        return redirect('/news');
     }
 }

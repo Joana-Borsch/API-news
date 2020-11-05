@@ -17,6 +17,12 @@
                                     <td>{{$new->newsbody}}</td>
                                     <td><a href="{{Route('news.show', $new->id)}}">See more</a></td>
                                     <td><a href="{{Route('news.edit', $new->id)}}">Edit</a></td>
+                                    <td><form action="{{Route('news.destroy', $new->id)}}"
+                                    method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <input type="submit" value="Delete">
+                                    </form></td>
                                     @endforeach
                                 </tr>
                             </tbody>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be4e6f7d-4dcf-41fa-8db2-b5f724348a98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/news/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/news/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news/index.blade.php" afterDir="false" />
@@ -140,7 +139,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="PHPUnit.NewsTest.test_can_update_news">
+  <component name="RunManager" selected="PHPUnit.NewsTest.test_can_delete_news">
     <configuration name="NewsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -157,6 +156,15 @@
         </PhpTestInterpreterSettings>
       </CommandLine>
       <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" method="test_can_create_news" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsTest.test_can_delete_news" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" method="test_can_delete_news" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="NewsTest.test_can_update_news" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -177,26 +185,17 @@
       <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" method="test_can_view_one_news" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="NewsTest.test_users_can_view_all_news" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <CommandLine>
-        <PhpTestInterpreterSettings>
-          <option name="interpreterName" value="PHP 7.3" />
-        </PhpTestInterpreterSettings>
-      </CommandLine>
-      <TestRunner class="Tests\Feature\NewsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/NewsTest.php" method="test_users_can_view_all_news" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.NewsTest.test_can_delete_news" />
         <item itemvalue="PHPUnit.NewsTest.test_can_update_news" />
         <item itemvalue="PHPUnit.NewsTest.test_can_create_news" />
         <item itemvalue="PHPUnit.NewsTest.test_can_view_one_news" />
         <item itemvalue="PHPUnit.NewsTest" />
-        <item itemvalue="PHPUnit.NewsTest.test_users_can_view_all_news" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +212,7 @@
       <workItem from="1604405345188" duration="346000" />
       <workItem from="1604433044875" duration="337000" />
       <workItem from="1604477059018" duration="5264000" />
-      <workItem from="1604574091694" duration="6083000" />
+      <workItem from="1604574091694" duration="6971000" />
     </task>
     <servers />
   </component>
@@ -229,28 +228,28 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1604574525910" />
-    <state width="1398" height="675" key="GridCell.Tab.0.bottom" timestamp="1604589420621">
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1604590179628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="675" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604589420621" />
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604590179628" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.793@0.23.1440.793" timestamp="1603992871424" />
     <state width="1398" height="175" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1604512301467" />
-    <state width="1398" height="675" key="GridCell.Tab.0.center" timestamp="1604589420620">
+    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1604590179626">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="675" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604589420620" />
+    <state width="1398" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604590179626" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.793@0.23.1440.793" timestamp="1603992871422" />
     <state width="1398" height="175" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1604512301466" />
-    <state width="1398" height="675" key="GridCell.Tab.0.left" timestamp="1604589420620">
+    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1604590179625">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="675" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604589420620" />
+    <state width="1398" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604590179625" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.793@0.23.1440.793" timestamp="1603992871421" />
     <state width="1398" height="175" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1604512301465" />
-    <state width="1398" height="675" key="GridCell.Tab.0.right" timestamp="1604589420621">
+    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1604590179627">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="675" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604589420621" />
+    <state width="1398" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604590179627" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.793@0.23.1440.793" timestamp="1603992871423" />
     <state width="1398" height="175" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1604512301467" />
   </component>
