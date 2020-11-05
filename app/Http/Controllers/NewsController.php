@@ -17,19 +17,20 @@ class NewsController extends Controller
 
     public function create()
     {
-        //
+        return view ('news.create');
     }
 
 
     public function store(Request $request)
     {
-        //
+        News::create($request->all());
+        return redirect ('\news');
     }
 
 
     public function show(News $news)
     {
-        //
+
     }
 
 
