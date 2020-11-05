@@ -44,10 +44,31 @@ class NewsTest extends TestCase
     }
     public function test_can_view_one_news()
     {
-        $new = News::factory()->make();
+        $news = News::factory()->make();
 
-        $response = $this->get('/news/' . $new->id);
+        $response = $this->get('/news/' . $news->id);
 
         $response->assertStatus(302);
+    }
+    public function test_can_update_news()
+    {
+        $user = User::factory()->make();
+        $news = News::factory()->create([
+                'headline'=>'Yoga',
+                'newsbody'=>'descripcio',
+            ]);
+
+        $response = $this->actingAs($user)->patch('/news/' .$news->id, [
+            'headline'=>'Equitacion',
+            'newsbody'=>'descripcio',
+
+        ]);
+        $this->assertDatabaseHas('news', [
+            'headline'=>'Equitacion',
+            'newsbody'=>'descripcio',
+        ]);
+
+        $response->assertStatus(302);
+        $response->assertRedirect('/news');
     }
 }

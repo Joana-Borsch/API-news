@@ -36,12 +36,13 @@ class NewsController extends Controller
 
     public function edit(News $news)
     {
-        //
+        return view('news.edit', compact('news'));
     }
 
     public function update(Request $request, News $news)
     {
-        //
+        $news->update($request->all());
+        return redirect ('/news');
     }
 
     public function destroy(News $news)
