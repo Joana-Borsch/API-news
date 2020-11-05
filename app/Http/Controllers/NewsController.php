@@ -24,13 +24,13 @@ class NewsController extends Controller
     public function store(Request $request)
     {
         News::create($request->all());
-        return redirect ('\news');
+        return redirect ('/news');
     }
 
 
     public function show(News $news)
     {
-
+        return view ('news.show', compact('news'));
     }
 
 

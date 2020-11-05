@@ -15,6 +15,7 @@
                                 <tr>
                                     <td>{{$new->headline}}</td>
                                     <td>{{$new->newsbody}}</td>
+                                    <td><a href="{{Route('news.show', $new->id)}}">See more</a></td>
                                     @endforeach
                                 </tr>
                             </tbody>

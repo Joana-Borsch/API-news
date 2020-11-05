@@ -16,7 +16,7 @@
                         </div>
                         <div class="form-group">
                             <label>Newsbody</label>
-                            <input type="mediumtext" name="newsbody" class="form-control"/>
+                            <textarea type="text" name="newsbody" class="form-control"></textarea>
                         </div>
                         <div class="card-footer">
                             <input type="submit" value="Create" class="btn btn-primary">

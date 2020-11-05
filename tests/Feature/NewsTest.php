@@ -42,5 +42,12 @@ class NewsTest extends TestCase
         ]);
         $response->assertStatus(302);
     }
+    public function test_can_view_one_news()
+    {
+        $new = News::factory()->make();
 
+        $response = $this->get('/news/' . $new->id);
+
+        $response->assertStatus(302);
+    }
 }
